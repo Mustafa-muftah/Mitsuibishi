@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* navbar */
+nav {
+  display: flex;
+  flex-direction: row;
+}
+nav img {
+  max-width: 100%;
+  object-fit: scale-down;
+}
+/* content first section */
+/* image */
+.content1 {
+  background-image: url(https://mountain-mitsubishi.com/site-uploads/1001261/Images/bg-night.jpg);
+  /* height: 80vw; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+/* text */
+.text-content {
+  text-align: center;
+  color: white;
+  padding-top: 150px;
+}
+.text-content span {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.button-content {
+  margin-top: 40px;
+}
+
+.button-content button {
+  border: 2px solid rgb(175, 8, 8);
+  background-color: rgb(175, 8, 8);
+  color: white;
+  width: 350px;
+  max-width: 100%;
+}
+/* sepcial button */
+.button-content .btn-special {
+  border: 2px solid beige;
+  width: 704px;
+  max-width: 100%;
+  background-color: beige;
+  color: black;
+}
+/* carousel */
+.content1 .carousel {
+  border: 2px solid white;
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+}
+.content1 .carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+/* content2 */
+/* first item */
+.content2 .firstItem {
+  background-color: black;
+}
+.content2 .firstItem p {
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  margin: 0px 50px;
+  padding-top: 30px;
+}
+.content2 .firstItem button {
+  padding: 3px 4px;
+  border: 2px solid bisque;
+  background-color: bisque;
+  color: black;
+  margin: 30px;
+}
+/* second item */
+.content2 .secondItem .column {
+  background-color: white;
+}
+.content2 .secondItem .column button {
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
+.content2 .secondItem .column2 {
+  background-color: rgb(175, 8, 8);
+}
+.content2 .secondItem .column2 h3 {
+  color: white;
+}
+.content2 .secondItem .column2 button {
+  border: 2px solid white;
+  background-color: white;
+  color: rgb(175, 8, 8);
+}
+/* contnent3 */
+.content3 {
+  background-image: url(https://mountain-mitsubishi.com/site-uploads/1001261/Images/bg-day.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content3 h1,
+p {
+  color: white;
+  line-height: 2;
+}
+@media (max-width: 768px) {
+  .content3 p {
+    display: none;
+  }
+}
+.content3 button {
+  border: 2px solid rgb(175, 8, 8);
+  background-color: rgb(175, 8, 8);
+  color: white;
+}
+.content4 {
+  background-color: black;
+}
+.content4 p {
+  color: white;
+  font-size: 20px;
+}
+/* Content5 */
+
+.content5 .card img {
+  width: 100%;
+  max-width: 100%;
+}
+.content5 .card-title {
+  color: white;
+}
+footer {
+  background-color: black;
+  color: white;
+}
