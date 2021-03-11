@@ -5,121 +5,224 @@
 }
 /* navbar */
 nav {
+ 
   display: flex;
   flex-direction: row;
+  
 }
 nav img {
-  max-width: 100%;
+  max-width: 70%;
   object-fit: scale-down;
+  margin-left: 4vw;
 }
+.firstRow-ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding: -0.5vw 0;
+  margin-left: 4vw;
+}
+.tilte-anchor {
+  font-size: 1.75vw;
+  margin-right: 2vw;
+}
+.vertical-line {
+  border-right: 2px solid #ddd;
+  height: 2vw;
+}
+.info-anchor {
+  text-align: center;
+  font-size: 0.8vw;
+  color: #000;
+}
+.info-anchor i {
+  color: black;
+  font-size: 1.5vw;
+}
+.info-anchor a {
+  color: black;
+
+  margin: 0 2vw 0.5vw 2vw;
+}
+.addres {
+  color: black;
+  font-size: 0.75vw;
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: normal;
+  margin-left: 0.25vw;
+}
+.tele-anchor {
+  font-size: 1.5vw;
+  font-weight: 700;
+  margin-left: 2vw;
+}
+.navigation-anchors {
+  font-size: 1vw;
+  margin-left: 3vw;
+}
+
 /* content first section */
 /* image */
 .content1 {
   background-image: url(https://mountain-mitsubishi.com/site-uploads/1001261/Images/bg-night.jpg);
   /* height: 80vw; */
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 30px;
+  padding-bottom: 2vw;
 }
 /* text */
 .text-content {
   text-align: center;
   color: white;
-  padding-top: 150px;
+  padding-top: 8vw;
 }
 .text-content span {
-  font-size: 30px;
+  font-size: 3vw;
   font-weight: bolder;
 }
+.buttons-carousel {
+  width: 90vw;
+  margin: auto;
+}
 .button-content {
-  margin-top: 40px;
+  width: 100%;
 }
 
 .button-content button {
-  border: 2px solid rgb(175, 8, 8);
-  background-color: rgb(175, 8, 8);
+  /* border: 2px solid #ed0000; */
+  background-color: #ed0000;
   color: white;
-  width: 350px;
+  width: 33%;
   max-width: 100%;
+}
+
+.button-content button:hover {
+  background-color: white;
+  color: #ed0000;
 }
 /* sepcial button */
 .button-content .btn-special {
   border: 2px solid beige;
-  width: 704px;
+  /* width: 704px; */
+  width: 66.5%;
   max-width: 100%;
   background-color: beige;
   color: black;
 }
+
 /* carousel */
 .content1 .carousel {
   border: 2px solid white;
-  width: 1200px;
-  max-width: 100%;
-  margin: auto;
+  width: 100%;
+  margin: 2vw auto;
 }
 .content1 .carousel-inner img {
-  width: 100%;
-  height: 100%;
+  width: 90vw;
 }
 /* content2 */
+
 /* first item */
-.content2 .firstItem {
-  background-color: black;
+.content2 .first-item {
+  background-color:  #222;
+  display: flex;
+  width: 100%;
 }
-.content2 .firstItem p {
-  font-size: 20px;
-  font-weight: bolder;
+.content2 .hours{
+  flex: 2;
+  padding:2.9vw 5vw;
+  color:white
+}
+.content2 .date{
+  flex: 6;
+}
+.date .date-list{
+  display: flex;
   color: white;
-  margin: 0px 50px;
-  padding-top: 30px;
+  padding:3vw 0  ;
 }
-.content2 .firstItem button {
-  padding: 3px 4px;
-  border: 2px solid bisque;
-  background-color: bisque;
+.date .date-list li{
+  list-style: none;
+}
+.content2 .shop-parts{
+  flex: 4;
+}
+
+.content2 .shop-parts button {
+  padding: .75vw 2vw;
+  border: 2px solid white;
+  background-color: white;
   color: black;
-  margin: 30px;
+  margin: 2.5vw 0 3vw 8vw;
 }
 /* second item */
-.content2 .secondItem .column {
+
+.secondItem{
+  display: flex;
+  
+}
+.left-side{
+  flex: 1;
   background-color: white;
 }
-.content2 .secondItem .column button {
+.right-side{
+  flex: 1;
+  background-color: #F00;
+}
+.left-side button {
   border: 2px solid black;
   background-color: black;
   color: white;
 }
-.content2 .secondItem .column2 {
-  background-color: rgb(175, 8, 8);
+.left-side button:hover{
+  background-color: white;
+  color: black;
 }
-.content2 .secondItem .column2 h3 {
+.right-side h3 {
   color: white;
 }
-.content2 .secondItem .column2 button {
+.right-side button {
   border: 2px solid white;
   background-color: white;
-  color: rgb(175, 8, 8);
+  
+} 
+.right-side button:hover{
+  color: white;
+  background-color: black;
 }
 /* contnent3 */
 .content3 {
   background-image: url(https://mountain-mitsubishi.com/site-uploads/1001261/Images/bg-day.jpg);
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.content3 h1,
-p {
+.content3 h1 {
   color: white;
   line-height: 2;
 }
-@media (max-width: 768px) {
+.content3 p {
+  color: white;
+  font-size: 1.5vw;
+}
+/* @media (max-width: 768px) {
   .content3 p {
     display: none;
   }
-}
+} */
 .content3 button {
-  border: 2px solid rgb(175, 8, 8);
-  background-color: rgb(175, 8, 8);
+  border: 2px solid #F00;
+  background-color: #F00;
   color: white;
+  padding: .75vw 2vw;
+}
+.content3 button:hover{
+  background-color: white;
+  color: #F00;
+  
 }
 .content4 {
   background-color: black;
@@ -134,10 +237,188 @@ p {
   width: 100%;
   max-width: 100%;
 }
+.content5 .card-info{
+  background-color: #222;
+}
+.content5 .card-info h4 {
+  background-color: green;
+  width: 100%;
+  padding: 1vw;
+}
 .content5 .card-title {
   color: white;
+  width: 100%;
 }
-footer {
-  background-color: black;
+.content5 .card-text{
   color: white;
+  padding: 2vw 0;
+}
+/*footer*/
+footer {
+  background-color:#222;
+  color: white;
+  display: flex;
+  font-family: 'Proxima Nova',Arial,sans-serif;
+}
+
+footer .first-part{
+  flex: 1;
+  padding: 4vw;
+}
+footer .mid-part{
+  flex: 1;
+  padding: 4vw;
+}
+
+footer .last-part{
+flex: 1;
+padding: 4vw;
+}
+.first-part h3 {
+  font-size: 1.75vw;
+    padding-bottom: .75vw;
+    font-weight: 700;
+    border-bottom: 1px solid #454548;
+    
+}
+.first-part h4,h5{
+text-transform: uppercase;
+    font-weight: 500;
+font-size: 1.5vw;
+  }
+  .first-part .info{
+    display: flex;
+    font-size: 1.1vw;
+  }
+  .info .head-line{
+    flex: 1;
+  }
+  .info .data{
+    flex: 1;
+  }
+  .first-part .sales{
+
+    width: 100%;
+    background-color:white;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+  .sales a {
+    background-color: #f5f5f5;
+    font-size: 1.25vw;
+    padding: .75vw;
+    display: block;
+    color: black;
+    text-decoration: none;
+   width: 100%;
+   font-weight: 600;
+   border-bottom: 2px solid #ddd ;
+  }
+  .sales-days{
+    display: flex; 
+  }
+  
+  .sales .day{
+    flex: 1;
+    color: black;
+
+  }
+  .day h6{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.25vw;
+  }
+  .sales .time{
+    flex: 1;
+    color: black;
+  }
+  .time h6{
+    text-transform: uppercase;
+    font-size: 1.1vw;
+  }
+  .two-anchors a{
+    background-color: #f5f5f5;
+    font-size: 1.25vw;
+    padding: .75vw;
+    display: block;
+    color: black;
+    text-decoration: none;
+   width: 100%;
+   font-weight: 600;
+   border: 2px solid #ddd ;
+   border-radius: 5px;
+
+  }
+  .mid-part h3 {
+    font-size: 1.75vw;
+      padding-bottom: .75vw;
+      font-weight: 700;
+      border-bottom: 1px solid #454548;
+  }
+  .mid-part .anchors a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: 500;
+   
+  }
+  .mid-part .icons{
+    border-top: 1px solid #454548;
+    padding: 2vw;
+
+  }
+  .mid-part .icons i{
+    font-size: 3vw;
+    padding-right: 3vw;
+    
+  }
+  .last-part h3 {
+    font-size: 1.75vw;
+      padding-bottom: .75vw;
+      font-weight: 700;
+      border-bottom: 1px solid #454548;
+      
+  }
+  .last-part iframe{
+    width: 100%;
+    height: 30vw;
+  }
+  
+@media(max-width : 770px){
+  .button-content button {
+    width: 100%;
+    margin: 1vw;
+}
+@media(max-width : 770px){
+  .button-content .btn-special {
+    width: 100%;
+    margin: 1vw;
+}
+@media(max-width : 770px){
+  .content2 .first-item {
+  display: block;
+  text-align: center;
+}
+@media(max-width : 770px){
+  .first-col .sales {
+ width: 100%;
+}
+@media(max-width : 770px){
+  footer {
+ display: block;
+}
+@media(max-width : 770px){
+  footer .first-part,.mid-part {
+ padding: 3vw;
+}
+@media(max-width : 770px){
+  nav img {
+ width: 40%;
+}
+@media(max-width : 770px){
+  .content5 .card{
+width: 100%;
+
+  }
 }

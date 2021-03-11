@@ -36,12 +36,13 @@
         <div style="display: flex; flex: 9; background-color: black"></div>
       </div>
     </div> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light;" >
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light fixed"  >
       
           <a class="navbar-brand" style="flex: 1;" href="#">
             <img
               src="https://mountain-mitsubishi.com/site-uploads/1001218/Images/transparent-logo.png"
               alt="logo"
+              id="nav-img"
             />
           </a>
   
@@ -63,33 +64,40 @@
             id="navbarCollapse"
           >
         
-            <div class="navbar-nav mb-lg-0 ">
+            <div class="navbar-nav mb-lg-0 firstRow-ul" id="nav-list" >
               <ul class="navbar-nav mt-0">
 
               <li class="nav-item">
                 <a
-                  class="nav-link py-0 text-body my-3 font-weight-bold"
+                  class="nav-link py-0 text-body font-weight-bold tilte-anchor"
                   href="#"
                   >Mountain Mitsubishi
                 </a>
               </li>
-              <li class="nav-item">
+              <span class="vertical-line"></span>
+              <li class="nav-item info-anchor">
                 <a
-                  class="nav-link py-0 text-body my-3"
+                  class="nav-link py-0 "
                   href="https://www.google.com/maps?saddr=My+Location&daddr=Mountain+Mitsubishi+2515+Upper+James+Street,+Hamilton,+ON+L0R+1W0"
                   ><i class="fas fa-map-marker-alt"
-                    >2515 UPPER JAMES STREET,MOUNT HOPE (HAMILTON),ONTARIO,L0R
-                    1W</i
-                  ></a
-                >
+                    ><span class="addres"> UPPER JAMES STREET,MOUNT HOPE (HAMILTON),ONTARIO,L0R
+                    1W </span> </i
+                  ></a>
+                
+                <a href="#" class="mail-anchor " >info@mountainmitsubishi.com</a>
               </li>
+              <span class="vertical-line"></span>
               <li class="nav-item">
                 <a
-                  class="nav-link py-0 text-body my-3"
+                  class="nav-link py-0 text-body  tele-anchor"
                   href="https://www.google.com/maps?saddr=My+Location&daddr=Mountain+Mitsubishi+2515+Upper+James+Street,+Hamilton,+ON+L0R+1W0"
                   ><i class="fa fa-phone"> 905-679-2626</i>
                 </a>
               </li>
+              </ul>
+            
+              <ul class="navbar-nav icons mx-2 ">
+           
               <li class="nav-item">
                   <a
                     class="nav-link py-0 text-body my-3"
@@ -97,6 +105,7 @@
                     >    <i class="fa fa-facebook-square"></i>
                   </a>
                 </li>
+               
                 <li class="nav-item">
                   <a
                     class="nav-link py-0 text-body my-3"
@@ -122,46 +131,56 @@
             </div>
   
            
-            <ul class="navbar-nav " >
+            <ul class="navbar-nav navigation-anchors mt-2  " >
               <li class="nav-item">
-                <a class="nav-link mx-2  py-0 text-body" href="#">HOME </a>
+                <a class="nav-link mx-2  py-0 text-body  font-weight-bold" href="#">HOME </a>
               </li>
+              <span class="vertical-line"></span>
               <li class="nav-item">
-                <a class="nav-link mx-2  py-0 text-body" href="#">IN STOCK</a>
+                <a class="nav-link mx-2  py-0 text-body  font-weight-bold" href="#">IN STOCK</a>
               </li>
+              <span class="vertical-line"></span>
               <li class="nav-item">
-                <a class="nav-link mx-2  py-0 text-body" href="#"> USSD INVENTORY</a>
+                <a class="nav-link mx-2  py-0 text-body  font-weight-bold" href="#"> USSD INVENTORY</a>
               </li>
+              <span class="vertical-line"></span>
               <li class="nav-item">
-                <a class="nav-link mx-2  py-0 text-body" href="#">NEW VECHILES</a>
+                <a class="nav-link mx-2  py-0 text-body  font-weight-bold" href="#">NEW VECHILES</a>
               </li>
+              <span class="vertical-line"></span>
               <li class="nav-item">
-                <a class="nav-link mx-2  py-0 text-body" href="#">PARTS</a>
+                <a class="nav-link mx-2  py-0 text-body  font-weight-bold" href="#">PARTS</a>
               </li>
+              <span class="vertical-line"></span>
               <li class="nav-item">
-                  <a class="nav-link mx-2  py-0 text-body" href="#">SERVIECS</a>
+                  <a class="nav-link mx-2  py-0 text-body  font-weight-bold" href="#">SERVIECS</a>
                 </li>
+                <span class="vertical-line"></span>
                 <li class="nav-item">
-                  <a class="nav-link mx-2  py-0 text-body" href="#">GET PRE APPROVED</a>
+                  <a class="nav-link mx-2  py-0 text-body  font-weight-bold" href="#">GET PRE APPROVED</a>
                 </li>
+                <span class="vertical-line"></span>
                 <li class="nav-item">
-                  <a class="nav-link mx-2  py-0 text-body" href="#">SPECIALS</a>
+                  <a class="nav-link mx-2  py-0 text-body  font-weight-bold" href="#">SPECIALS</a>
                 </li>
+                <span class="vertical-line"></span>
                 <li class="nav-item">
-                  <a class="nav-link mx-2  py-0 text-body" href="#">ABOUT US</a>
+                  <a class="nav-link mx-2  py-0 text-body  font-weight-bold" href="#">ABOUT US</a>
                 </li>
+                <span class="vertical-line"></span>
             </ul>
             
           </div>
         </div>
       </nav> 
       <!-- Content first section -->
-      <div class="content">
+      
       <div class=" content1 ">
           <div class="text-content">
               <h3>WELCOME TO <br><span> MOUNTAIN MITSUBISHI </span></h3>
           </div>
           <!--buttons first row-->
+          <div class="buttons-carousel">
           <div class="button-content "   >
             <div class="center-block text-center p-1">
             <button type="button" class="btn " >
@@ -201,7 +220,7 @@
 </div>
      </div>
      <!--Slider-->
-     <div class="carousel slide mt-5 " data-ride="carousel">
+     <div class="carousel slide   " data-ride="carousel">
 
         <!-- Indicators -->
         <ul class="carousel-indicators">
@@ -213,7 +232,7 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://mountain-mitsubishi.com/site-uploads/1001218/Slider-1/New-Location.jpg" alt="">
+            <img src="https://mountain-mitsubishi.com/site-uploads/1001218/Slider-1/First%20Responder_mountain.jpg" alt="">
           </div>
           <div class="carousel-item">
             <img src="https://mountain-mitsubishi.com/site-uploads/1001218/Slider-1/Buy-new-Mountain.jpg" alt="">
@@ -233,36 +252,45 @@
       </div>
       </div>
       </div>
+      
       <!--Content 2 -->
       <!--first item-->
-      <div class="container-fluid content2">
-          <div class=" row firstItem ">
-              <p class="col">OPEN HOURS <span></span> </p>
-              <div class="col-4">
+      <div class="content2">
+        <div class="first-item">
+          <div class=" hours ">
+              <p >TODAY HOURS!  </p>
+          </div>
+              <div class=" date ">
+               <ul class="date-list">
+                 <li class="mx-2"> Sales: 09:00 AM - 06:00 PM</li>
+                 <li class="mx-2"> Service: 8:00 AM - 5:00 PM</li>
+                 <li class="mx-2"> Parts: 8:00 AM - 5:00 PM</li>
+               </ul>
+              </div>
+              <div class="shop-parts">
               <button type="button" class="btn ">
-                <strong>SHOP PARTS</strong>
+                <strong>VIEW HOURS</strong>
               </button>
           </div>
         </div>
+       
         <!--second item-->
-        <div class="row secondItem">
-            <div class="col column">
-                <div class="row">
-                    <h3 class="m-4">Used Vechile Special</h3>
-                </div>
-                <div class="row"><button type="button" class="btn m-4 ">
-                    <strong>View Special</strong>
-                  </button></div>
-            </div>
-            <div class="col column2">
-                <div class="row">
-                    <h3 class="m-4">Parts Services Special</h3>
-                </div>
-                <div class="row"><button type="button" class="btn m-4 ">
-                    <strong>View Special</strong>
-                  </button></div>
-            </div>
-            </div>
+       
+        <div class="secondItem">
+          <div class="left-side">
+            <h3 class="m-4">Used Vechile Special</h3>
+            <button type="button" class="btn m-4 ">
+              <strong>View Special</strong>
+            </button>
+
+          </div>
+          <div class="right-side">
+            <h3 class="m-4">Parts Services Special</h3>
+            <button type="button" class="btn m-4 ">
+              <strong>View Special</strong>
+            </button>
+          </div>
+
         </div>
       <!--content 3-->
       <div class="content3">
@@ -283,104 +311,126 @@
         <h1 class="text-center m-5 p-5">FEATURED VECHILES</h1>
         <div class="row">
             <div class="col"><div class="card">
-                <img class="card-img-top" src="./pics/Cars-we-used-to-love-Mitsubishi-Lancer.jpeg" alt="Card image" >
-                <div class="card-body bg-dark">
-                  <h4 class="card-title">MITSUBISHI</h4>
-                  <p class="card-text"> Car price </p>
-                  <p class="card-text">350 $</p>
-                </div>
+                <img class="card-img-top" src="https://www.equipmentsearch.com/uploadedimages/8668/16774162.jpg?width=200" alt="Card image" >
+                
+                  <div class="card-info">
+                  <h4 class="card-title text-center">IN STOCK</h4>
+                  <p class="card-text text-center">350 $</p>
+                
         </div>
+    </div>
     </div>
     <div class="col"><div class="card">
-        <img class="card-img-top" src="./pics/Cars-we-used-to-love-Mitsubishi-Lancer.jpeg" alt="Card image" >
-        <div class="card-body bg-dark">
-          <h4 class="card-title">MITSUBISHI</h4>
-          <p class="card-text"> Car price </p>
-          <p class="card-text">350 $</p>
-        </div>
+        <img class="card-img-top" src="https://www.equipmentsearch.com/uploadedimages/8668/16775933-1.png?width=200" alt="Card image" >
+        <div class="card-info">
+          <h4 class="card-title text-center">IN STOCK</h4>
+          <p class="card-text text-center">350 $</p>
+        
 </div>
-</div>
-<div class="col"><div class="card">
-    <img class="card-img-top" src="./pics/Cars-we-used-to-love-Mitsubishi-Lancer.jpeg" alt="Card image" >
-    <div class="card-body bg-dark">
-      <h4 class="card-title">MITSUBISHI</h4>
-      <p class="card-text"> Car price </p>
-      <p class="card-text">350 $</p>
-    </div>
 </div>
 </div>
 <div class="col"><div class="card">
-    <img class="card-img-top" src="./pics/Cars-we-used-to-love-Mitsubishi-Lancer.jpeg" alt="Card image" >
-    <div class="card-body bg-dark">
-      <h4 class="card-title">MITSUBISHI</h4>
-      <p class="card-text"> Car price </p>
-      <p class="card-text">350 $</p>
-    </div>
+  <img class="card-img-top" src="https://www.equipmentsearch.com/uploadedimages/8668/16774162.jpg?width=200" alt="Card image" >
+  <div class="card-info">
+    <h4 class="card-title text-center">IN STOCK</h4>
+    <p class="card-text text-center">350 $</p>
+  
+</div>
+</div>
+</div>
+<div class="col"><div class="card">
+    <img class="card-img-top" src="https://www.equipmentsearch.com/uploadedimages/8668/16774166.jpg?width=200" alt="Card image" >
+    <div class="card-info">
+      <h4 class="card-title text-center">IN STOCK</h4>
+      <p class="card-text text-center">350 $</p>
+    
+</div>
+</div>
+</div>
+<div class="col"><div class="card">
+    <img class="card-img-top" src="https://www.equipmentsearch.com/uploadedimages/8668/16774202.jpg?width=200" alt="Card image" >
+    <div class="card-info">
+      <h4 class="card-title text-center">IN STOCK</h4>
+      <p class="card-text text-center">350 $</p>
+    
 </div>
 </div>
 </div>
     </div>
     <!--Footer-->
     <footer >
-        <div class="row">
-            <div class="col">
-                <h3 class="p-5">CONTACT US</h3>
-                <h4 class="p-3">Mountain Mitsubishi</h4>
-                <h5 class="px-3">located at 2515 uppar janses streat,Mount,Orlando 106 1W0</h5>
-                <div class="row p-5">
-                <div class="col">
-                    <h6>Tele</h6>
-                    <h6>Fax</h6>
-                    <h6>WhatsApp</h6>
-                </div>
-                <div class="col">
-                <h6>08-234-44</h6>
-                <h6>09-33-456</h6>
-                <h6>03-334-22</h6>
-                </div>
-            </div>
-        </div>
-            <div class="col">
-                <h3 class="p-5">QUICK LINES</h3>
-                <h5 class="px-5">home</h5>
-                <h5 class="px-5">Mitsubishi</h5>
-                <h5 class="px-5">Mount</h5>
-                <h5 class="px-5">adventures</h5>
-                <h5 class="px-5">data-slide-to</h5>
-                <h5 class="px-5">data-slide</h5>
-                <h5 class="px-5">we</h5>
-                <h5 class="px-5">weekend</h5>
-            </div>
-            <div class="col">
-                <h3 class="p-5">OPENING HOURS</h3>
-                <h4 class="p-3">Mountain Mitsubishi</h4>
-                <div class="row p-5">
-                <div class="col">
-                    <h6>Tele with anything</h6>
-                    <h6>Fax</h6>
-                    <h6>WhatsApp</h6>
-                </div>
-                <div class="col">
-                <h6>08-234-44</h6>
-                <h6>09-33-456</h6>
-                <h6>03-334-22</h6>
-                </div>
-                
-            </div>
-            
-            <i class="fa fa-facebook-square pl-5" style="color: white;"></i>
-            <i class="	fa fa-twitter-square p-2"style="color: white;"></i>
-            <i class="	fa fa-youtube-play p-1"style="color: white;"></i>
+        
           
-
-        </div>
-        <div class="row">
-          
-        <h6 class="text-center mx-5 px-5">COPYRIGHT>2020 Mountain Mitsubishi Canda whats <i class='fab fa-canadian-maple-leaf' style='color:red'></i>so we need</h4>
+        <!-- <h6 class="text-center mx-5 px-5">COPYRIGHT>2020 Mountain Mitsubishi Canda whats <i class='fab fa-canadian-maple-leaf' style='color:red'></i>so we need</h4> -->
            
+        
+        <div class="first-part ">
+          <h3 >CONTACT US</h3>
+          <h4 >Mountain Mitsubishi</h4>
+          <h5 >2515 uppar janses streat,Mount,<br>Orlando 106 1W0</h5>
+          <div class="info pt-3">
+            <div class="head-line">
+            <h6>Email :</h6>
+              <h6>Fax :<h6>
+              <h6>Whats App :</h6>
+              </div>
+              <div class="data">
+                <h6>INFO@MOUNTAINMITSUBISHI.COM</h6>
+                <h6>09-33-456</h6>
+                <h6>03-334-22</h6>
+              </div>
+          </div>
+          <div class="sales">
+           <a href="#">SALES</a>
+            <div class="sales-days">
+            <div class="day p-3">
+              <h6>MONDAY - THURSDAY:
+              </h6>
+                <h6>FRIDAY:
+                </h6>
+                <h6>SATURDAY:
+                </h6>
+                <h6>SUNDAY:
+                </h6>
+            </div>
+            <div class="time p-3">
+              <h6>09:00 AM - 07:00 PM</h6>
+                <h6>09:00 AM - 07:00 PM</h6>
+                <h6>09:00 AM - 07:00 PM</h6>
+                <h6>CLOSED</h6>
+            </div>
+          </div>
+          </div>
+          <div class="two-anchors mt-2">
+          <a href="#" class="my-2">SERVICE</a> 
+          <a href="#"  class="my-2">PARTS</a>
+          </div>
+        </div>
+        <div class="mid-part ">
+          <h3 >QUICK LINKS</h3>
+          <div class="anchors">
+            <a href="">In Stock</a>
+            <a href="">Used Inventory</a>
+            <a href="">New Vehicles</a>
+            <a href="">Parts</a>
+            <a href="">Service</a>
+            <a href="">Get Pre-Approved</a>
+            <a href="">Specials</a>
+            <a href="" class="mb-3">About Us</a>
+          </div>
+          <div class="icons">
+            <i class="fa fa-facebook-square"></i>
+            <i class="	fa fa-twitter-square"></i>
+            <i class="	fa fa-instagram"></i>
+
+          </div>
+        </div>
+        <div class="last-part">
+          <h3 >LOCATION</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1454.8345634414854!2d-79.904468!3d43.174469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9016e2b31637%3A0x982a6f13e5984652!2s2515%20Upper%20James%20St%2C%20Mount%20Hope%2C%20ON%20L0R%201W0%2C%20Canada!5e0!3m2!1sen!2seg!4v1615421226947!5m2!1sen!2seg"   style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </footer>
     
-  
+  <script src="script.js"></script>
     </body>
 </html>
