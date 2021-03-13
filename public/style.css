@@ -445,7 +445,7 @@ font-size: 3vw;
   }
 }
 @media(max-width : 770px){
-  footer .day h6 , .time h6{
+  footer .sales a, .day h6 , .time h6{
 font-size: 3vw;
 
   }
