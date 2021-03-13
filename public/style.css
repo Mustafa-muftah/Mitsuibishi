@@ -312,7 +312,7 @@ font-size: 1.5vw;
     border: 2px solid white;
     border-radius: 5px;
   }
-  .sales a {
+  .sales a h6 {
     background-color: #f5f5f5;
     font-size: 1.25vw;
     padding: .75vw;
@@ -450,12 +450,7 @@ font-size: 3vw;
 
   }
 }
-@media(max-width : 770px){
-  footer .sales a{
-font-size: 3vw;
 
-  }
-}
 @media(max-width : 770px){
   footer .two-anchors a{
 font-size: 3vw;
