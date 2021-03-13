@@ -52,14 +52,23 @@ nav img {
   font-weight: normal;
   margin-left: 0.25vw;
 }
-.tele-anchor {
+.tele-anchor span {
   font-size: 1.5vw;
   font-weight: 700;
+  font-family: "Proxima Nova", Arial, sans-serif;
+  color: black;
+}
+.tele-anchor:first-child{
   margin-left: 2vw;
 }
 .navigation-anchors {
   font-size: 1vw;
   margin-left: 3vw;
+}
+.icons .item {
+  border:  2px solid #ddd ;
+  font-size: 1.5vw;
+ padding: .5vw;
 }
 
 /* content first section */
@@ -262,16 +271,16 @@ footer {
 }
 
 footer .first-part{
-  flex: 1;
+  flex: 5;
   padding: 4vw;
 }
 footer .mid-part{
-  flex: 1;
+  flex: 3;
   padding: 4vw;
 }
 
 footer .last-part{
-flex: 1;
+flex: 4;
 padding: 4vw;
 }
 .first-part h3 {
@@ -370,7 +379,7 @@ font-size: 1.5vw;
   }
   .mid-part .icons i{
     font-size: 3vw;
-    padding-right: 3vw;
+    padding-right: 2vw;
     
   }
   .last-part h3 {
@@ -407,6 +416,7 @@ font-size: 1.5vw;
 @media(max-width : 770px){
   footer {
  display: block;
+ 
 }
 @media(max-width : 770px){
   footer .first-part,.mid-part {
@@ -422,3 +432,47 @@ width: 100%;
 
   }
 }
+@media(max-width : 770px){
+  footer .first-part h3{
+font-size: 5vw;
+
+  }
+}
+@media(max-width : 770px){
+  footer .first-part h4 , h5{
+font-size: 3vw;
+
+  }
+}
+@media(max-width : 770px){
+  footer .day h6 , .time h6{
+font-size: 3vw;
+
+  }
+}
+@media(max-width : 770px){
+  footer .two-anchors a{
+font-size: 3vw;
+
+  }
+}
+@media(max-width : 770px){
+  footer .mid-part h3{
+font-size: 5vw;
+
+  }
+}
+@media(max-width : 770px){
+  footer .mid-part .anchors a{
+font-size: 3vw;
+
+  }
+}
+@media(max-width : 770px){
+  footer .last-part h3 {
+font-size: 5vw;
+
+  }
+}
+
+
