@@ -1,17 +1,19 @@
-let scrollValue = 0;
+const originalScrollLimit = 128;
+let scrollLimitValue = originalScrollLimit;
 window.onscroll = () => {
   let navImg = document.getElementById("nav-img"),
     navList = document.getElementById("nav-list");
 
   if (
-    document.body.scrollTop > 128 ||
-    document.documentElement.scrollTop > 128
+    document.body.scrollTop > scrollLimitValue ||
+    document.documentElement.scrollTop > scrollLimitValue
   ) {
-    scrollValue = document.documentElement.scrollTop;
     navList.style.display = "none";
     navImg.style.width = "40%";
+    scrollLimitValue = 80;
   } else {
     navList.style.display = "flex";
     navImg.style.width = "100%";
+    scrollLimitValue = originalScrollLimit;
   }
 };
