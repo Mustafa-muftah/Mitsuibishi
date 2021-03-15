@@ -1,7 +1,13 @@
-window.onscroll = (e) => {
+let scrollValue = 0;
+window.onscroll = () => {
   let navImg = document.getElementById("nav-img"),
     navList = document.getElementById("nav-list");
-  if (window.pageYOffset > 200) {
+
+  if (
+    document.body.scrollTop > 128 ||
+    document.documentElement.scrollTop > 128
+  ) {
+    scrollValue = document.documentElement.scrollTop;
     navList.style.display = "none";
     navImg.style.width = "40%";
   } else {

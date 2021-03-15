@@ -8,7 +8,8 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/532662bacd.js"
@@ -37,7 +38,7 @@
         <div style="display: flex; flex: 9; background-color: black"></div>
       </div>
     </div> -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light fixed"  >
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light " id="navBar"  >
       
           <a class="navbar-brand" style="flex: 1;" href="#">
             <img
@@ -172,12 +173,12 @@
       
       <div class=" content1 ">
           <div class="text-content">
-              <h3>WELCOME TO <br><span> MOUNTAIN MITSUBISHI </span></h3>
+              <h3>WELCOME TO <br><span class="pt-3"> MOUNTAIN MITSUBISHI </span></h3>
           </div>
           <!--buttons first row-->
           <div class="buttons-carousel">
           <div class="button-content "   >
-            <div class="center-block text-center p-1">
+            <div class="center-block text-center mainButtons " >
             <button type="button" class="btn " >
                 <strong>SHOP IN STOCK VECHILES</strong>
               </button>
@@ -190,7 +191,7 @@
               
 </div>
 <!--second row-->
-<div class="center-block text-center p-1">
+<div class="center-block text-center mainButtons">
     <button type="button" class="btn " >
         <strong>BOOK A SERVICES</strong>
       </button>
@@ -203,7 +204,7 @@
       
 </div>
 <!--third row-->
-<div class="center-block text-center p-1">
+<div class="center-block text-center mainButtons ">
     <button type="button" class="btn " >
         <strong>VALUE YOUR TRADE</strong>
       </button>
@@ -305,7 +306,7 @@
     <div class="content5"  >
         <h1 class="text-center m-5 p-5">FEATURED VECHILES</h1>
         <div class="row">
-            <div class="col"><div class="card">
+            <div class="col cardOne"><div class="card cardOne">
                 <img class="card-img-top" src="https://www.equipmentsearch.com/uploadedimages/8668/16774162.jpg?width=200" alt="Card image" >
                 
                   <div class="card-info">
@@ -315,7 +316,7 @@
         </div>
     </div>
     </div>
-    <div class="col"><div class="card">
+    <div class="col cardTwo"><div class="card ">
         <img class="card-img-top" src="https://www.equipmentsearch.com/uploadedimages/8668/16775933-1.png?width=200" alt="Card image" >
         <div class="card-info">
           <h4 class="card-title text-center">IN STOCK</h4>
@@ -324,7 +325,7 @@
 </div>
 </div>
 </div>
-<div class="col"><div class="card">
+<div class="col cardThree"><div class="card ">
   <img class="card-img-top" src="https://www.equipmentsearch.com/uploadedimages/8668/16774162.jpg?width=200" alt="Card image" >
   <div class="card-info">
     <h4 class="card-title text-center">IN STOCK</h4>
@@ -333,7 +334,7 @@
 </div>
 </div>
 </div>
-<div class="col"><div class="card">
+<div class="col cardFour"><div class="card ">
     <img class="card-img-top" src="https://www.equipmentsearch.com/uploadedimages/8668/16774166.jpg?width=200" alt="Card image" >
     <div class="card-info">
       <h4 class="card-title text-center">IN STOCK</h4>
@@ -342,7 +343,7 @@
 </div>
 </div>
 </div>
-<div class="col"><div class="card">
+<div class="col cardFive"><div class="card ">
     <img class="card-img-top" src="https://www.equipmentsearch.com/uploadedimages/8668/16774202.jpg?width=200" alt="Card image" >
     <div class="card-info">
       <h4 class="card-title text-center">IN STOCK</h4>
@@ -353,7 +354,7 @@
 </div>
     </div>
     <!--Footer-->
-    <footer >
+    <footer class="mt-3" >
         
           
         <!-- <h6 class="text-center mx-5 px-5">COPYRIGHT>2020 Mountain Mitsubishi Canda whats <i class='fab fa-canadian-maple-leaf' style='color:red'></i>so we need</h4> -->
@@ -376,8 +377,8 @@
               </div>
           </div>
           <div class="sales">
-           <a href="#">SALES</a>
-            <div class="sales-days">
+           <a data-toggle="collapse" data-target="#demo">SALES</a>
+            <div class="sales-days collapse" id="demo" >
             <div class="day p-3">
               <h6>MONDAY-THURSDAY:
               </h6>

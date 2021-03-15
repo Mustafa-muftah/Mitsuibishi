@@ -83,10 +83,11 @@ nav img {
   padding-bottom: 2vw;
 }
 /* text */
-.text-content {
+.text-content h3 {
   text-align: center;
   color: white;
   padding-top: 8vw;
+  font-size: 2vw;
 }
 .text-content span {
   font-size: 3vw;
@@ -99,6 +100,9 @@ nav img {
 .button-content {
   width: 100%;
 }
+.mainButtons{
+  padding: .5vw ;
+}
 
 .button-content button {
   /* border: 2px solid #ed0000; */
@@ -106,6 +110,9 @@ nav img {
   color: white;
   width: 33%;
   max-width: 100%;
+  font-size: 1.25vw;
+  border-radius: none;
+  padding: .65vw 2vw;
 }
 
 .button-content button:hover {
@@ -114,13 +121,20 @@ nav img {
 }
 /* sepcial button */
 .button-content .btn-special {
-  border: 2px solid beige;
+  border: 2px solid #ffffffbf;
   /* width: 704px; */
   width: 66.5%;
   max-width: 100%;
-  background-color: beige;
-  color: black;
+  background-color: #ffffffbf;
+  color: #000;
+  font-size: 1.25vw;
 }
+.button-content .btn-special:hover {
+  color: #FFF;
+    background-color: #000000c2;
+
+}
+
 
 /* carousel */
 .content1 .carousel {
@@ -144,8 +158,11 @@ nav img {
   padding:2.9vw 5vw;
   color:white
 }
+.content2 .hours p{
+ font-size :1.25vw;
+}
 .content2 .date{
-  flex: 6;
+  flex: 7;
 }
 .date .date-list{
   display: flex;
@@ -153,18 +170,24 @@ nav img {
   padding:3vw 0  ;
 }
 .date .date-list li{
+  font-size: 1.25vw;
   list-style: none;
 }
 .content2 .shop-parts{
-  flex: 4;
+  flex: 3;
 }
 
 .content2 .shop-parts button {
-  padding: .75vw 2vw;
+  padding: .75vw 2.25vw;
   border: 2px solid white;
   background-color: white;
   color: black;
-  margin: 2.5vw 0 3vw 8vw;
+  margin: 2.5vw 0 3vw 4vw;
+  font-size: 1.25vw;
+}
+.content2 .shop-parts button:hover{
+  background-color: black;
+  color: white;
 }
 /* second item */
 
@@ -180,10 +203,15 @@ nav img {
   flex: 1;
   background-color: #F00;
 }
+.left-side h3 {
+  font-size: 3vw;
+  font-weight: 400;
+}
 .left-side button {
   border: 2px solid black;
   background-color: black;
   color: white;
+  font-size: 1.25vw;
 }
 .left-side button:hover{
   background-color: white;
@@ -191,10 +219,14 @@ nav img {
 }
 .right-side h3 {
   color: white;
+  font-size: 3vw;
+  font-weight: 400;
+
 }
 .right-side button {
   border: 2px solid white;
   background-color: white;
+  font-size: 1.25vw;
   
 } 
 .right-side button:hover{
@@ -212,6 +244,7 @@ nav img {
 .content3 h1 {
   color: white;
   line-height: 2;
+  font-size: 3vw;
 }
 .content3 p {
   color: white;
@@ -237,10 +270,14 @@ nav img {
   background-color: black;
 }
 .content4 p {
-  color: white;
-  font-size: 20px;
+  color: #FFF;
+  font-size: 1.25vw;
+  font-weight: 700;
 }
 /* Content5 */
+.content5 h1 {
+  font-size: 3vw;
+}
 
 .content5 .card img {
   width: 100%;
@@ -290,11 +327,15 @@ padding: 4vw;
     border-bottom: 1px solid #454548;
     
 }
-.first-part h4,h5{
+.first-part h4,h5,h6{
 text-transform: uppercase;
     font-weight: 500;
 font-size: 1.5vw;
   }
+  .first-part h6{
+        font-weight: 500;
+    font-size: 1.25vw;
+      }
   .first-part .info{
     display: flex;
     font-size: 1.1vw;
@@ -393,16 +434,52 @@ font-size: 1.5vw;
     width: 100%;
     height: 30vw;
   }
+  @media(max-width : 770px){
+    .text-content h3 {
+      font-size: 3vw;  
+  }
+  @media(max-width : 770px){
+    .text-content span {
+      font-size: 4vw;  
+  }
+  @media(max-width : 770px){
+    .content2 .hours p {
+      font-size: 2vw;  
+  }
+  @media(max-width : 770px){
+    .date .date-list{
+     padding:0 7vw;
+  }
+  @media(max-width : 770px){
+    .date .date-list li {
+      font-size: 2vw;  
+  }
   
+  @media(max-width : 770px){
+    .content2 .shop-parts button {
+      font-size: 2vw;  
+  }
+  @media(max-width : 770px){
+    .right-side button ,.left-side button {
+      font-size: 2vw;  
+  }
+  @media(max-width : 770px){
+    .content4 p {
+      font-size: 1.75vw;  
+  }
+
 @media(max-width : 770px){
   .button-content button {
-    width: 100%;
-    margin: 1vw;
+    width: 70%;
+    margin: .25vw;
+    font-size: 2.5vw;
+    
 }
 @media(max-width : 770px){
   .button-content .btn-special {
-    width: 100%;
-    margin: 1vw;
+    width: 70%;
+    margin: .25vw;
+    font-size: 2vw;
 }
 @media(max-width : 770px){
   .content2 .first-item {
@@ -412,6 +489,10 @@ font-size: 1.5vw;
 @media(max-width : 770px){
   .first-col .sales {
  width: 100%;
+}
+@media(max-width : 770px){
+  .content5 .cardThree,.cardFour ,.cardFive  {
+display: none;
 }
 @media(max-width : 770px){
   footer {
@@ -441,6 +522,12 @@ font-size: 5vw;
 @media(max-width : 770px){
   footer .first-part h4 , h5{
 font-size: 3vw;
+
+  }
+}
+@media(max-width : 770px){
+  footer .first-part h6{
+font-size: 2vw;
 
   }
 }
