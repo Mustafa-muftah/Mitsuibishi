@@ -435,10 +435,21 @@ font-size: 1.5vw;
     height: 30vw;
   }
   @media(max-width : 770px){
-    .firstRow-ul {
-     display:none;  
+    .firstRow-ul li {
+     display:none; 
     
   }
+  @media(max-width : 770px){
+    .firstRow-ul  {
+     border:none; 
+    
+  }
+  @media(max-width : 770px){
+    .vertical-line  {
+    border: none;  
+    
+  }
+  
   @media(max-width : 770px){
     .navigation-anchors li {
      font-size: 2vw;
